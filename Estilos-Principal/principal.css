@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+body {
+    color: #fff;
+    font-family: sans-serif;
+    background-image: url(../Img-Fondo/fondo.jpg);
+}
+
+.Logo{
+    background-color: #24303c;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#Nombre_de_pagina{
+    font-size: 20px;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: lighter;
+}
+
+.menu{
+    background-color:#24303c;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.btn_menu{
+    font-size: 20px;
+}
+
+.menu a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu_items{
+    display: none;
+    flex-direction: column; 
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+ul.menu_items.show{
+    display: flex;
+}
+    
+.presentacion .btn_carrito{
+    margin: 5px;
+}
+
+.button{
+    text-align: center;
+    justify-content: center;
+}
+
+.presentacion {
+    padding: 30px;
+    text-align: center;
+}
+
+.presentacion p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: white;
+    font-style: italic;
+}
+
+.presentacion span{
+    margin: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.button, .añadir-Producto{
+    margin-top: 5px;
+    text-align: center;
+    width: 30vw;
+    height: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.titulo-tabla{
+    margin: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+}
+
+.titulo-tabla h4{
+    margin: 20px;
+}
+
+.titulo-tabla i{
+    font-size: 40px;
+}
+
+table {
+    margin: 20px 10px;
+    width: 97%;
+    height: 300px;
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    color: #000;
+}
+
+thead th{
+    padding: 5px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+}
+
+table tbody{
+    text-align: center;
+    font-size: 25px;
+}
+
+#itemForm{
+    position: relative;
+    left: 15px;
+    width: 90%;
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    align-items: center;
+    background-color: #24303c;
+    color: white;
+}
+
+#itemForm label{
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#itemForm input{
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    height: 30px;
+    width: 70%;
+}
+
+.btntabla{
+    background-color: #000;
+    color: #fff;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 25px;
+    width: 70%;
+    border-radius: 25px;
+    border: none;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 30px;
+}
+
+.redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+@media screen and (min-width: 840px){
+
+    #Nombre_de_pagina {
+        font-size: 35px;
+        font-weight: lighter;
+        margin: 0 50px;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu_items {
+        display: flex;
+        flex-direction: row;
+        list-style: none; 
+    }
+
+    .menu_items li {
+        margin: 7px 25px;
+    }
+    
+    .menu_items li a {
+        font-size: 23px;
+        text-transform: uppercase;
+    }
+    
+    .menu_items li a:hover {
+        text-decoration: underline;
+    }
+    
+    .btn_menu{
+        display: none;
+    }
+    
+    .btn_carrito {
+        padding: 6px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .presentacion {
+        padding: 60px;
+    }
+    
+    .presentacion p {
+        font-size: 35px;
+    }
+    
+    .presentacion span{
+        font-family: 'Audiowide';
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    
+    .button{
+        margin-top: 60px;
+        width: 170px;
+        height: 50px;
+        font-size: 25px;
+    }
+    
+    .titulo-tabla{
+        font-size: 50px;
+    }
+    
+    .titulo-tabla i{
+        font-size: 80px;
+    }
+    
+    table {
+        margin: 30px;
+        width: 95%;
+        height: 600px;
+    }
+    
+    thead th{
+        padding: 20px;
+        font-size: 40px;
+        border-bottom: 2px solid gray;
+    }
+    
+    #itemForm{
+        margin-bottom: 50px;
+        position: relative;
+        width: 50%;
+        left: 25%;
+    }
+    
+    .redes-sociales a {
+        font-size: 30px;
+        margin: 20px;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passion Sports</title>
+
+    <link rel="stylesheet" href="../miCuenta/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+
+    <script src="https://kit.fontawesome.com/4909f8ddc3.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+            <h1 id="Nombre_de_pagina">Passion Sports</h1>
+            <div class="btn_menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+        <nav class="menu">
+            <ul class="menu_items">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Productos/productos.html">Productos</a></li>
+                <li><a href="miCuenta.html">Mi cuenta</a></li>
+                <li><a href="../Contacto/contacto.html">Contactenos</a></li>
+
+                <div class="btn_carrito">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form class="form-registro">
+
+            <h4>Formulario de Regristo</h4>
+
+            <input class="campos-de-relleno" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+
+            <input class="campos-de-relleno" type="text" name="apellido" id="apellido"
+                placeholder="Ingrese su Apellido">
+
+            <input class="campos-de-relleno" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+
+            <input class="campos-de-relleno" type="password" name="contraseña" id="correo"
+                placeholder="Ingrese su contraseña">
+
+            <div class="">
+                <h4 class="random-label">Copia estos caracteres:</h4>
+
+                <input type="text" id="randomCharacters" class="campos-de-relleno" disabled>
+
+                <button id="generateButton" class="btn-registro">Generar</button> <br><br>
+                <!-- Botón para generar caracteres aleatorios -->
+
+                <h4 class="user-label">Ingresa los caracteres:</h4><br>
+
+                <input type="text" id="userCharacters" class="campos-de-relleno">
+
+                <button id="checkButton" class="btn-registro">Validar</button>
+                <!-- Botón para comprobar si los caracteres ingresados son correctos -->
+                <div id="message" class="message"></div>
+            </div>
+
+            <input id="Registro" class="btn-registro" type="submit" value="Registrarme">
+
+            <p><a href="#">¿Ya tienes una cuenta?</a></p>
+        </form>
+    </section>
+
+
+    <footer>
+        <ul class="redes-sociales">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../JavaScripts/main.js"></script>
+    <script src="../JavaScripts/miCuenta.js"></script>
+</body>
+
+</html>

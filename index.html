@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasion Sports</title>
+
+    <link rel="stylesheet" href="Estilos-Principal/principal.css">
+    <!--Link del css-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <!--Link de la fuente del titulo de la pagina-->
+
+    <script src="https://kit.fontawesome.com/4909f8ddc3.js" crossorigin="anonymous"></script>
+    <!--spript para los iconos del footer-->
+
+</head>
+
+<body>
+    <header>
+        <div class="Logo">
+            <h1 id="Nombre_de_pagina">Passion Sports</h1>
+            <!--No pusimos un boton porque con el div se veia mejor (para nosotros) y se nos hizo mas facil manejarlo, aunque tranquilamente se podria haber utilizado un boton-->
+            <div class="btn_menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+
+        <nav class="menu">
+            <ul class="menu_items">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Productos/productos.html">Productos</a></li>
+                <li><a href="miCuenta/miCuenta.html">Mi cuenta</a></li>
+                <li><a href="Contacto/contacto.html">Contactenos</a></li>
+
+                <div class="btn_carrito">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section> <!--Seccion de Presentacion-->
+        <div class="presentacion">
+            <p>Somos <span>Passion Sport</span> es un sitio web que se enfoca en todo lo relacionado con el mundo del
+                deporte.</p>
+            <div><button class="button">Saber mas</button></div>
+        </div>
+    </section>
+
+
+    <section> <!--Seccion de la Tabla-->
+        <div class="titulo-tabla">
+            <h4>Añade un producto</h4>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+
+        <form id="itemForm">
+            <label for="Marca">Marca:</label>
+            <input type="text" id="marca" name="name">
+
+            <label for="Color">Color:</label>
+            <input type="text" id="color" name="color">
+
+            <label for="Talle">Talle:</label>
+            <input type="number" id="talle" name="talle">
+            
+            <button class="btntabla" id="addItemButton" type="button">Agregar</button>
+            <button class="btntabla" id="clearTableButton" type="button">Vaciar Tabla</button>
+            <button class="btntabla" id="addTresItemButton" type="button">Agregar 3 veces</button>
+        </form>
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Color</th>
+                    <th>Talle</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!--Tabla Dinamica-->
+            </tbody>
+        </table>
+
+    </section>
+
+    <footer>
+        <ul class="redes-sociales">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="JavaScripts/tabla.js"></script>
+    <script src="JavaScripts/main.js"></script>
+</body>
+
+</html>
